@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Interdotz — Satu Akun, Semua Akses</title>
+    <title>Interdotz Satu Akun, Semua Akses</title>
 
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600,700,800,900&display=swap" rel="stylesheet" />
@@ -35,14 +35,17 @@
                     <div class="absolute inset-0 rounded-xl rotate-6 group-hover:rotate-12 transition-transform duration-300" style="background: var(--accent-primary);"></div>
                     <div class="absolute inset-0 rounded-xl flex items-center justify-center" style="background: var(--bg-deep);">
                         <div class="grid grid-cols-3 gap-[3px]">
+                            <!-- Row 1: top bar of Z -->
                             <div class="w-[4px] h-[4px] rounded-full" style="background: var(--accent-primary);"></div>
-                            <div class="w-[4px] h-[4px] rounded-full" style="background: var(--accent-secondary);"></div>
                             <div class="w-[4px] h-[4px] rounded-full" style="background: var(--accent-primary);"></div>
-                            <div class="w-[4px] h-[4px] rounded-full" style="background: var(--accent-secondary);"></div>
                             <div class="w-[4px] h-[4px] rounded-full" style="background: var(--accent-primary);"></div>
-                            <div class="w-[4px] h-[4px] rounded-full" style="background: var(--accent-secondary);"></div>
+                            <!-- Row 2: diagonal of Z -->
+                            <div class="w-[4px] h-[4px] rounded-full" style="background: rgba(99,102,241,0.2);"></div>
                             <div class="w-[4px] h-[4px] rounded-full" style="background: var(--accent-primary);"></div>
-                            <div class="w-[4px] h-[4px] rounded-full" style="background: var(--accent-secondary);"></div>
+                            <div class="w-[4px] h-[4px] rounded-full" style="background: rgba(99,102,241,0.2);"></div>
+                            <!-- Row 3: bottom bar of Z -->
+                            <div class="w-[4px] h-[4px] rounded-full" style="background: var(--accent-primary);"></div>
+                            <div class="w-[4px] h-[4px] rounded-full" style="background: var(--accent-primary);"></div>
                             <div class="w-[4px] h-[4px] rounded-full" style="background: var(--accent-primary);"></div>
                         </div>
                     </div>
@@ -131,14 +134,17 @@
 
             <div class="mt-16 flex justify-center">
                 <div class="grid grid-cols-3 gap-1.5">
+                    <!-- Row 1: top bar of Z -->
                     <div class="w-2.5 h-2.5 rounded-full animate-bounce" style="background: var(--accent-primary); animation-delay: 0s;"></div>
-                    <div class="w-2.5 h-2.5 rounded-full animate-bounce" style="background: var(--accent-secondary); animation-delay: 0.1s;"></div>
+                    <div class="w-2.5 h-2.5 rounded-full animate-bounce" style="background: var(--accent-primary); animation-delay: 0.1s;"></div>
                     <div class="w-2.5 h-2.5 rounded-full animate-bounce" style="background: var(--accent-primary); animation-delay: 0.2s;"></div>
-                    <div class="w-2.5 h-2.5 rounded-full animate-bounce" style="background: var(--accent-secondary); animation-delay: 0.3s;"></div>
+                    <!-- Row 2: diagonal of Z -->
+                    <div class="w-2.5 h-2.5 rounded-full animate-bounce" style="background: rgba(99,102,241,0.2); animation-delay: 0.3s;"></div>
                     <div class="w-2.5 h-2.5 rounded-full animate-bounce" style="background: var(--accent-primary); animation-delay: 0.4s;"></div>
-                    <div class="w-2.5 h-2.5 rounded-full animate-bounce" style="background: var(--accent-secondary); animation-delay: 0.5s;"></div>
+                    <div class="w-2.5 h-2.5 rounded-full animate-bounce" style="background: rgba(99,102,241,0.2); animation-delay: 0.5s;"></div>
+                    <!-- Row 3: bottom bar of Z -->
                     <div class="w-2.5 h-2.5 rounded-full animate-bounce" style="background: var(--accent-primary); animation-delay: 0.6s;"></div>
-                    <div class="w-2.5 h-2.5 rounded-full animate-bounce" style="background: var(--accent-secondary); animation-delay: 0.7s;"></div>
+                    <div class="w-2.5 h-2.5 rounded-full animate-bounce" style="background: var(--accent-primary); animation-delay: 0.7s;"></div>
                     <div class="w-2.5 h-2.5 rounded-full animate-bounce" style="background: var(--accent-primary); animation-delay: 0.8s;"></div>
                 </div>
             </div>
@@ -160,10 +166,10 @@
                 <h2 class="text-4xl md:text-6xl font-black mb-6" style="color: var(--accent-secondary);">Dots Units</h2>
                 <p class="text-lg text-zinc-400 max-w-2xl mx-auto leading-relaxed">
                     <template x-if="lang === 'id'">
-                        <span>Anggap saja Dots Units sebagai tiket kamu. Satu saldo yang bisa dipakai di semua produk Interdotz — tanpa ribet, tanpa langganan terpisah.</span>
+                        <span>Gunakan Dots Units sebagai tiket kamu. Satu saldo yang bisa dipakai di semua produk Interdotz tanpa ribet, tanpa langganan terpisah.</span>
                     </template>
                     <template x-if="lang === 'en'">
-                        <span>Think of Dots Units as your ticket. One balance you can use across all Interdotz products — no hassle, no separate subscriptions.</span>
+                        <span>Think of Dots Units as your ticket. One balance you can use across all Interdotz products no hassle, no separate subscriptions.</span>
                     </template>
                 </p>
             </div>
@@ -221,8 +227,8 @@
                     <span x-text="lang === 'id' ? 'Semua Ada di Sini' : 'It\'s All Here'"></span>
                 </h2>
                 <p class="text-lg text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-                    <template x-if="lang === 'id'"><span>Dari produktivitas sampai keuangan — semuanya bisa kamu akses dari satu tempat.</span></template>
-                    <template x-if="lang === 'en'"><span>From productivity to finance — access it all from one place.</span></template>
+                    <template x-if="lang === 'id'"><span>Dari produktivitas sampai keuangan, semuanya bisa kamu akses dari satu tempat.</span></template>
+                    <template x-if="lang === 'en'"><span>From productivity to finance access it all from one place.</span></template>
                 </p>
             </div>
 
@@ -374,8 +380,8 @@
                         <div>
                             <h3 class="text-lg font-bold mb-2" x-text="lang === 'id' ? 'Karena Kamu Butuh' : 'Because You Need It'"></h3>
                             <p class="text-zinc-500 leading-relaxed">
-                                <template x-if="lang === 'id'"><span>Setiap produk lahir dari masalah nyata, bukan ide yang dipaksakan. Kalau kamu pernah merasa "andai ada aplikasi untuk ini" — itu yang kami bangun.</span></template>
-                                <template x-if="lang === 'en'"><span>Every product is born from a real problem, not a forced idea. If you've ever thought "I wish there was an app for this" — that's what we build.</span></template>
+                                <template x-if="lang === 'id'"><span>Setiap produk lahir dari masalah nyata, bukan ide yang dipaksakan. Kalau kamu pernah merasa "andai ada aplikasi untuk ini" itu yang kami bangun.</span></template>
+                                <template x-if="lang === 'en'"><span>Every product is born from a real problem, not a forced idea. If you've ever thought "I wish there was an app for this" that's what we build.</span></template>
                             </p>
                         </div>
                     </div>
